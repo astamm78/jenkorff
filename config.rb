@@ -28,3 +28,21 @@ set :haml, { :ugly => true, :format => :html5 }
 after_configuration do
   sprockets.append_path File.dirname(::React::Source.bundled_path_for('react.js'))
 end
+
+# For Private Password
+file = File.open("password", "r")
+password = file.read
+file.close
+
+file = File.open("username", "r")
+username = file.read
+file.close
+
+activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method   = :ftp
+  deploy.host     = "ftp.andrewstamm.com"
+  deploy.path     = "/public_html"
+  deploy.user     = username
+  deploy.password = password
+end
