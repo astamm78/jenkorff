@@ -1,0 +1,16 @@
+{
+  "title" : "Jen Korff Design",
+  "subhead" : "Welcome.",
+
+  "case studies" : [
+    {
+      "title" : "image title",
+      "image" : "image source"
+    },
+    {
+      "title" : "image title 2",
+      "image" : "image source 2"
+    }
+  ]
+
+}
