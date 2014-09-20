@@ -28,11 +28,12 @@ Test = React.createClass
             <h2>{this.state.data.subhead}</h2>
 
             {projects}
+            <div className='clear-both'></div>
           </span>
         )`
 
     `(
-      <div>
+      <div className='center-block'>
         {content}
       </div>
     )`
@@ -46,7 +47,7 @@ Test = React.createClass
       thumbSource = "images/" + project.id + "/thumb_200x280.jpg"
 
       `(
-        <div key={index}>
+        <div key={index} className='pull-left center-block'>
           <a onClick={this._showModal(project.id)}>
             <p>
               <img src={thumbSource} />
