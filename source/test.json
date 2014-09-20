@@ -2,14 +2,30 @@
   "title" : "Jen Korff Design",
   "subhead" : "Welcome.",
 
-  "case studies" : [
+  "projects" : [
     {
-      "title" : "image title",
-      "image" : "image source"
+      "id" : "012",
+      "text" : ["One North Interactive, Design Guide Branding Campaign", "Creative Director and Designer for fanciful promotional mailer. A really fun print piece that showcased the brand and services of a new company."],
+      "categories" : ["Branding", "Creative Direction", "Design"],
+      "images" : ["1N_01.jpg", "1N_02.jpg", "1N_03.jpg", "1N_04.jpg"]
     },
     {
-      "title" : "image title 2",
-      "image" : "image source 2"
+      "id" : "001",
+      "text" : ["Poster Illustration and Design;", "Hodaj s Njom is a Croatian performance that premiered in Zagreb on 4.25.14"],
+      "categories" : ["Illustration", "Custom Illustration", "Design", "Custom Lettering", "Art Direction", "Drawing"],
+      "images" : ["HodajsNjom-sm.jpg"]
+    },
+    {
+      "id" : "000",
+      "text" : ["Book cover Concept, Design, and Custom Illustration."],
+      "categories" : ["Illustration", "Custom Illustration" , "Design", "Custom Lettering", "Drawing"],
+      "images" : ["PentralsCover.jpg"]
+    },
+    {
+      "id" : "023",
+      "text" : ["Clarity Consulting Legal Rebranding Designs", "Clarity Consulting approached me with a Re-Branding effort. With existing colors and Logo design they needed a fresh approach to their banner designs, trade show materials and one-sheet design. As Creative Director and Designer I created three distinct cohesive looks for different company offerings."],
+      "categories" : ["Branding", "Creative Direction", "Design"],
+      "images" : ["CC_banner01.jpg", "CC_banner02.jpg", "CC_banner03.jpg", "CC_onesheet01.jpg", "CC_onesheet02.jpg"]
     }
   ]
 

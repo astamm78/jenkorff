@@ -12,6 +12,7 @@ Test = React.createClass
       type: 'get'
       dataType: 'json'
       success: (data) =>
+        console.log data
         @setState data: data
 
   render: ->
@@ -19,10 +20,14 @@ Test = React.createClass
       when null
         `<p>Loading...</p>`
       else
+        projects = @_projectsDisplay()
+
         `(
           <span>
             <h1>{this.state.data.title}</h1>
             <h2>{this.state.data.subhead}</h2>
+
+            {projects}
           </span>
         )`
 
@@ -32,5 +37,56 @@ Test = React.createClass
       </div>
     )`
 
+  _projectsDisplay: ->
+    projects = @state.data.projects
+
+    for project, index in projects
+      projectText = @_renderText(project)
+      fullSizeImages = @_fullSizeImages(project)
+      thumbSource = "images/" + project.id + "/thumb_200x280.jpg"
+
+      `(
+        <div key={index}>
+          <a onClick={this._showModal(project.id)}>
+            <p>
+              <img src={thumbSource} />
+            </p>
+          </a>
+
+          <div className="modal modal-fade project-detail" id={project.id}>
+            <a onClick={this._hideModal}>
+              {fullSizeImages}
+              {projectText}
+            </a>
+          </div>
+
+        </div>
+      )`
+
+  _hideModal: ->
+    $('.project-detail').removeClass('project-show')
+
+  _showModal: (id) ->
+    =>
+      $('.project-detail').removeClass('project-show')
+      $("#" + id).addClass('project-show')
+
+  _renderText: (project) ->
+    for para, index in project.text
+      `(
+        <p key={index}>
+          {para}
+        </p>
+      )`
+
+  _fullSizeImages: (project) ->
+    for image, index in project.images
+      url = "images/" + project.id + "/" + image
+
+      `(
+        <img key={index} src={url} />
+      )`
+
 
 React.renderComponent Test(), document.getElementById('react-content')
+
