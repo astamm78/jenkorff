@@ -42,7 +42,7 @@ activate :deploy do |deploy|
   deploy.build_before = true # default: false
   deploy.method   = :ftp
   deploy.host     = "ftp.andrewstamm.com"
-  deploy.path     = "/public_html"
+  deploy.path     = "/public_html/hosting/jenkorff"
   deploy.user     = username
   deploy.password = password
 end
