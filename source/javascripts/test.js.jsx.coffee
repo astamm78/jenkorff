@@ -1,6 +1,6 @@
 ###* @jsx React.DOM ###
 
-@Test = React.createClass
+Test = React.createClass
   componentWillMount: ->
     @_getJSON()
 
@@ -33,4 +33,4 @@
     )`
 
 
-React.renderComponent @Test(), document.getElementById('react-content')
+React.renderComponent Test(), document.getElementById('react-content')
