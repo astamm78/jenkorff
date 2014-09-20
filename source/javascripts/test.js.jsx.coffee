@@ -24,9 +24,6 @@ Test = React.createClass
 
         `(
           <span>
-            <h1>{this.state.data.title}</h1>
-            <h2>{this.state.data.subhead}</h2>
-
             {projects}
             <div className='clear-both'></div>
           </span>
