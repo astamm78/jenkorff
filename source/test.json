@@ -24,9 +24,188 @@
     {
       "id" : "023",
       "text" : ["Clarity Consulting Legal Rebranding Designs", "Clarity Consulting approached me with a Re-Branding effort. With existing colors and Logo design they needed a fresh approach to their banner designs, trade show materials and one-sheet design. As Creative Director and Designer I created three distinct cohesive looks for different company offerings."],
-      "categories" : ["Branding", "Creative Direction", "Design"],
+      "categories" :  ["Branding", "Creative Direction", "Design"],
       "images" : ["CC_banner01.jpg", "CC_banner02.jpg", "CC_banner03.jpg", "CC_onesheet01.jpg", "CC_onesheet02.jpg"]
+    },
+    {
+      "id" : "026",
+      "text" : ["Concept, Brand Strategy, Creative Direction, Design, and Custom Illustration for various client identities"],
+      "categories" : ["Branding", "Creative Direction", "Custom Illustration", "Illustration", "Design"],
+      "images" : ["logo_01.jpg", "logo_02.jpg", "logo_03.jpg", "logo_04.jpg", "logo_05.jpg", "logo_06.jpg", "logo_07.jpg", "logo_08.jpg", "logo_09.jpg", "logo_10.jpg", "logo_11.jpg", "logo_12.jpg", "logo_13.jpg", "logo_14.jpg"]
+    },
+    {
+      "id" : "019",
+      "text" : ["Creative Direction and Branding of the Trayt Logo and Trayt website."],
+      "categories" : ["Branding", "Creative Direction", "Website Design"],
+      "images" : ["trayt_web.jpg"]
+    },
+    {
+      "id" : "014",
+      "text" : ["Re-Branding, Creative Direction, Strategy, Design, and Production of new PointBridge collateral", "CLIENT TESTIMONIAL: <i>When I discovered my company was in the market for a designer, Jen was the first and only designer I wanted to hire. I've worked with Jen while at two organizations and was never disappointed with the results she produced. Jen's a dream designer; she takes an idea and turns it into a fully-baked concept, her work is original and eye-catching, and her turnaround time is fast; not to mention, Jen's a true pleasure to work with. One of my favorite aspects about Jen's work is that she was able to produce fun, but professional designs--we were able to escape the corporate/stuffy feel with Jen's expertise and help. -- Callie Jones, Marketing Manager, Perficient</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["pb_01.jpg", "pb_02.jpg", "pb_03.jpg"]
+    },
+    {
+      "id" : "021",
+      "text" : ["Creative Direction, Strategy, Design, and Production of CUP Urban Investigation publication;", "A visual primer on community disaster preparedness, what it might look like, and why it matters.", "Art objects created by students in the 2012 College Now program at New Design High School and the Urban Assembly Academy of Government and Law in the Lower East Side, Manhattan, NY.", "CLIENT TESTIMONIAL: <i>Our class decided to create an over-the-top illustrative booklet that is both detailed in imagination as well as pieces. Despite the overwhelming number of elements to our booklet, Jen was always excited about working with our concept to make it into a visually appealing and cohesive booklet. I absolutely loved working with Jen. She is extremely talented, as she took our vision and transformed it into something tangible. I appreciate that she really listened to our ideas, suggestions and consistently made changes along the way transforming our vision into something beyond our expectation. She really impressed me and my students with the final product. If you would like to check out our booklet, please visit http://welcometocup.org/Store?product_id=27. - Fatima Abdul-Nabi, Teaching Artist, Center for Urban Pedagogy</i>"],
+      "categories" : ["Creative Direction", "Design", "Custom Lettering", "Production"],
+      "images" : ["ruckus_01.jpg", "ruckus_02.jpg", "ruckus_03.jpg", "ruckus_04.jpg", "ruckus_05.jpg", "ruckus_06.jpg"]
+    },
+    {
+      "id" : "011",
+      "text" : ["Concept, Design, and Maintenance; Lead design in branding rollout; Populating website, building pages, strategy of new product design, custom image design, and updating content for Hubbard One website."],
+      "categories" : ["Art Direction", "Design", "Website Design", "Website Production"],
+      "images" : ["h1web_01.jpg", "h1web_02.jpg", "h1web_03.jpg", "h1web_04.jpg"]
+    },
+    {
+      "id" : "020",
+      "text" : ["Spearheaded the Re-Branding effort for Believe High Schools Network, Brooklyn, NY.", "Creative direction, Concept, Design, and Production for BHSN Web Newsletter.", "CLIENT TESTIMONIAL: <i>I was particularly impressed by my first working experience with Jen. Our department created content for a quarterly brochure and Jen was quickly able to execute a design and layout vision that appealed to donors, families and faculty/staff. She has a talent for guiding clients through her creative process and transforming the unique background of every project into thoughtful and timeless designs. -- Daisy Lopez, Director of Communications and External Affairs, Believe High Schools Network</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production", "Custom Lettering"],
+      "images" : ["BHSN_bulletin-01.jpg", "BHSN_bulletin-02.jpg"]
+    },
+    {
+      "id" : "024",
+      "text" : ["Spearheaded the re-branding effort for international performance collaborative, Every House has a Door, NFP, Chicago, IL.", "Concept, Design, Built Custom CSS and HTML templates and Managed all email marketing campaigns promoting workshop events, tours, lectures, and festival performances."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Programming", "CSS", "HTML", "Javascript"],
+      "images" : ["ehhad-eblast_01.jpg", "ehhad-eblast_02.jpg"]
+    },
+    {
+      "id" : "015",
+      "text" : ["Concept for website bought by client; Art Director and Lead Designer for the wsfsbank.com website and Lead Designer of re-branding of printed collateral highlighting bank services at new branches."],
+      "categories" : ["Branding", "Art Direction", "Design", "Website Design", "Website Production"],
+      "images" : ["wsfs_web01.jpg", "wsfs_web02.jpg", "wsfs_z03.jpg"]
+    },
+    {
+      "id" : "013",
+      "text" : ["Designer for the Jen Korff Photography website. Manage site HTML, CSS and Javascript."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Custom Illustration", "Custom Lettering"],
+      "images" : ["korff_web01.jpg", "korff_web02.jpg"]
+    },
+    {
+      "id" : "018",
+      "text" : ["Art Direction, Design and Production of CUP publication and teaching tool aimed at inspiring future investigations for the Center of Urban Pedagogy, Brooklyn, NY", "Artwork: 9th Grade U.S. History class, AUP, Bushwick, Brooklyn"],
+      "categories" : ["Creative Direction","Design", "Strategy", "Production"],
+      "images" : ["Cup_Fed_01.jpg", "Cup_Fed_02.jpg", "Cup_Fed_03.jpg", "Cup_Fed_04.jpg", "Cup_Fed_05.jpg", "Cup_Fed_06.jpg"]
+    },
+    {
+      "id" : "032",
+      "text" : ["Strategy, Design, and Custom Illustration for The Strand and The New Yorker tote bag graphic"],
+      "categories" : ["Custom Illustration", "Design"],
+      "images" : ["dandy.jpg"]
+    },
+    {
+      "id" : "031",
+      "text" : ["Strategy, Design, Custom Illustration and Production of The Haiti Poster Project poster series entitled In Your Hands.", "Custom screen printed in the U.S.; 18x24\"; edition of 100.", "All proceeds go to Doctors Without Borders to aid in the Haiti Relief Effort."],
+      "categories" : ["Custom Illustration", "Design", "Screen Printing"],
+      "images" : ["haiti-poster.jpg"]
+    },
+    {
+      "id" : "033",
+      "text" : ["Art Direction, Design, and Production of UK tour poster and other promotional collateral for the artist duo, Cupola Bobber."],
+      "categories" : ["Art Direction", "Design", "Custom Illustration"],
+      "images" : ["manwho_poster.jpg"]
+    },
+    {
+      "id" : "003",
+      "text" : ["Spearheaded the Re-Branding effort of Bernard Zell Anshe Emet Day School, Chicago, IL.", "Strategy, Creative Direction, Design, and Production for BZAEDS Application brochure."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["appbro_01.jpg", "appbro_02.jpg", "appbro_03.jpg", "appbro_04.jpg"]
+    },
+    {
+      "id" : "008",
+      "text" : ["Strategy, Creative Director, Designer, Illustrator and Developer of the 2010 Hubbard One Holiday Greeting animated gif."],
+      "categories" : ["Creative Direction", "Custom Illustration", "Animation", "Design", "Production"],
+      "images" : ["H1-Animation-603x535.gif"]
+    },
+    {
+      "id" : "017",
+      "text" : ["Strategy, Creative Direction, Design, and Production for various Hubbard One email marketing campaigns and e-Newsletters."],
+      "categories" : ["Branding", "Art Direction", "Design", "Programming", "CSS", "HTML", "Javascript", "Production"],
+      "images" : ["H1-eblast_01.jpg", "H1-eblast_02.jpg", "H1-eblast_03.jpg", "H1-eblast_04.jpg"]
+    },
+    {
+      "id" : "010",
+      "text" : ["Strategy Creative Direction, Design, and Production of Exponent website Re-Design.", "My design of Exponent's website was awarded <i>Best Consulting Website</i> at the 2008 WebAwards.", "CLIENT TESTIMONIAL: <i>Jen was pulled into a design project for one of our clients. The client was not comfortable with the work they had seen by some other designers. Jen brought a fresh perspective to the table and ultimately they bought her concept. Moreover, her design was awarded a 'Best in Show' WebAward for consulting. The client was thrilled with the results. -- Jennifer Bullett, Director of Marketing, Hubbard One</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["ex_web_01.jpg", "ex_web_02.jpg", "ex_web_03.jpg"]
+    },
+    {
+      "id" : "006",
+      "text" : ["Spearheaded the Re-Branding effort of Believe High Schools Network, Brooklyn, NY.", "Strategy, Creative Direction, Design, Illustration and Production of the BHSN Recruitment, Open House, Application and Lottery Advertisements in English, Spanish and Polish languages.", "CLIENT TESTIMONIAL: <i>I was particularly impressed by my first working experience with Jen. She has a talent for guiding clients through her creative process and transforming the unique background of every project into thoughtful and timeless designs. -- Daisy Lopez, Director of Communications and External Affairs, Believe High Schools Network</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["bhsn_ad_01.jpg", "bhsn_ad_02.jpg"]
+    },
+    {
+      "id" : "027",
+      "text" : ["Strategy, Design, and Programming (built using custom CSS and HTML) of the Sophik Studio website.", "Features include vertical and horizontal scrolls for photographs, illustrations, news bits and client case studies."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Website Design", "Website Production", "Programming", "CSS", "HTML", "Javascript"],
+      "images" : ["sophik_01.jpg", "sophik_02.jpg", "sophik_03.jpg"]
+    },
+    {
+      "id" : "007",
+      "text" : ["Strategy, Design, Custom Illustration and Production of promotional print collateral advertising Hubbard One's annual Innovation Forum event.", "CLIENT TESTIMONIAL: <i>Jen has contributed greatly to our brand development over the past few years and has literally helped form every visual piece of communication we have created. As the fastest growing business within our division of Thomson Reuters, this is certainly a big task. On a person note, Jen is a pleasure to work and terrific team member. -- Jennifer Bullett, Director of Marketing, Hubbard One</i>"],
+      "categories" : ["Branding", "Creative Direction", "Custom Illustration",  "Design", "Production"],
+      "images" : ["h1_IF2011_01_1.jpg", "h1_IF2011_02.jpg"]
+    },
+    {
+      "id" : "005",
+      "text" : ["Spearheaded the Re-Branding effort of Believe High Schools Network, Brooklyn, NY.", "Creative Direction, Design, Custom Illustration, and Production of Believe High Schools Network Uniform Guideline Posters for Northside, Southside and Williamsburg Charter Schools.", "CLIENT TESTIMONIAL: <i>I was particularly impressed by my first working experience with Jen. She has a talent for guiding clients through her creative process and transforming the unique background of every project into thoughtful and timeless designs. -- Daisy Lopez, Director of Communications and External Affairs, Believe High Schools Network</i>"],
+      "categories" : ["Branding", "Creative Direction", "Custom Illustration", "Design", "Production"],
+      "images" : ["bhsn_uniform_01.jpg", "bhsn_uniform_02.jpg", "bhsn_uniform_03.jpg"]
+    },
+    {
+      "id" : "009",
+      "text" : ["Spearheaded the Brand Roll-out of Bernard Zell Anshe Emet Day School, Chicago, IL.", "Strategy, Creative Direction, Design, and Production of promotional print collateral advertising the Bernard Zell Anshe Emet Day School Annual Fund."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["bzaeds_01.jpg", "bzaeds_02.jpg", "bzaeds_03.jpg"]
+    },
+    {
+      "id" : "028",
+      "text" : ["Spearheaded the Re-Branding effort of Apologue Entertainment, LLC, Chicago, IL.", "Strategy, Creative Direction,Custom Illustration, Design, and Production of the Apologue Entertainment, LLC website. Features include custom illustrations, scrollable text, and shop."],
+      "categories" : ["Branding", "Creative Direction", "Custom Illustration", "Design", "Production"],
+      "images" : ["apologue_01.jpg", "apologue_02.jpg"]
+    },
+    {
+      "id" : "016",
+      "text" : ["Branding Strategy, Creative Direction, Custom-Illustration, and Website Design of the LGBT childrens book, Dahlia and Hazel.", "CLIENT TESTIMONIAL: <i>I couldn't have asked for anyone more perfect than Jen to work with. All work was done virtually so communication was key - she took our [story] through multiple concepts to a beautiful and unique finished product which included the design for our logo and website. She met every deadline and was easy to work with. Our developers appreciated her work too, as Jen was able to follow best practices and provided flexible design templates for their use. --Gary Mack, Managing Director and Co-Founder, Apologue Entertainment, LLC</i>"],
+      "categories" : ["Branding", "Creative Direction", "Custom Illustration", "Design", "Production"],
+      "images" : ["dh_web01.jpg", "dh_web02.jpg", "dh_web03.jpg", "dh_web04.jpg"]
+    },
+    {
+      "id" : "002",
+      "text" : ["Spearheaded the Re-Branding effort of Believe High Schools Network, Brooklyn, NY.", "Strategy, Creative Direction, Design, and Production of BHSN Autumn Newsletter.", "CLIENT TESTIMONIAL: <i>I was particularly impressed by my first working experience with Jen. Our department created content for a quarterly brochure and Jen was quickly able to execute a design and layout vision that appealed to donors, families and faculty/staff. She has a talent for guiding clients through her creative process and transforming the unique background of every project into thoughtful and timeless designs. -- Daisy Lopez, Director of Communications and External Affairs, Believe High Schools Network</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["bhsn_n_01.jpg", "bhsn_n_02.jpg", "bhsn_n_03.jpg", "bhsn_n_04.jpg", "bhsn_n_05.jpg", "bhsn_n_06.jpg"]
+    },
+    {
+      "id" : "025",
+      "text" : ["Strategy, Creative Direction, Design, and Production of various Hubbard One product launches via printed collateral and advertisements.", "CLIENT TESTIMONIAL: <i>Jen has contributed greatly to our brand development over the past few years and has literally helped form every visual piece of communication we have created. As the fastest growing business within our division of Thomson Reuters, this is certainly a big task. On a person note, Jen is a pleasure to work and terrific team member. --Jennifer Bullett, Director of Marketing, Hubbard One</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["h1_mailer_01.jpg", "h1_mailer_02.jpg", "h1_x_ad_03.jpg", "h1_x_ad_04.jpg"]
+    },
+    {
+      "id" : "022",
+      "text" : ["Spearheaded the Re-Branding effort of International Performance Collaborative, Every House has a Door, NFP, Chicago, IL.", "Creative Direction, Design, and Programming (built using custom CSS and HTML) of the <i>Every House has a Door</i> website. Features include photo galleries, scrollable text, full-length performance videos accessible via password, and performance video clips."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["ehhad_01.jpg", "ehhad_02.jpg", "ehhad_03.jpg", "ehhad_04.jpg", "ehhad_05.jpg"]
+    },
+    {
+      "id" : "004",
+      "text" : ["Spearheaded the Re-Branding effort of Believe High Schools Network, Brooklyn, NY.", "Creative direction, Design, and Production of Believe High Schools Network Application brochure for Northside, Southside and Williamsburg Charter Schools. Design features perforations for application removal to fit in a #10 envelope."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["bhsn_app_01.jpg", "bhsn_app_02.jpg", "bhsn_app_03.jpg", "bhsn_app_04.jpg", "bhsn_app_05.jpg", "bhsn_app_06.jpg", "bhsn_app_07.jpg"]
+    },
+    {
+      "id" : "030",
+      "text" : ["Strategy, Creative Direction, Design, and Production of the Hubbard One Innovation Forum invitation booklet", "CLIENT TESTIMONIAL: <i>Jen has created the concepts and designs for our annual client event -- The Innovation Forum. This project has included save the dates, invitations, signage, promotional materials, conference materials and also follow-up items. This complex project always has many moving parts and also many changes along the way. In addition to bringing terrific creative ideas to the table, Jen was also able to roll with the punches and deliver high-quality materials despite set-backs on our end. --Jennifer Bullett, Director of Marketing, Hubbard One</i>"],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["IF_01.jpg", "IF_02.jpg", "IF_03.jpg", "IF_04.jpg"]
+    },
+    {
+      "id" : "029",
+      "text" : ["Lead Designer for the re-branding of the msi.com website."],
+      "categories" : ["Branding", "Creative Direction", "Design", "Production"],
+      "images" : ["msi_website.jpg"]
     }
   ]
-
 }
