@@ -6,6 +6,7 @@ Test = React.createClass
 
   getInitialState: ->
     data: null
+    filter: 'ALL'
 
   _getJSON: ->
     $.ajax 'test.json',
@@ -16,57 +17,34 @@ Test = React.createClass
         @setState data: data
 
   render: ->
-    content = switch @state.data
+    switch @state.data
       when null
         `<p>Loading...</p>`
       else
-        projects = @_projectsDisplay()
+        thumbDisplay = @_thumbDisplay()
 
         `(
-          <span>
-            {projects}
-          </span>
+          <div className='thumb-container'>
+            {thumbDisplay}
+          </div>
         )`
 
-    `(
-      <div className='thumb-container'>
-        {content}
-      </div>
-    )`
 
-  _projectsDisplay: ->
+  _thumbDisplay: ->
     projects = @state.data.projects
 
     for project, index in projects
-      projectText = @_renderText(project)
-      fullSizeImages = @_fullSizeImages(project)
       thumbSource = "images/" + project.id + "/thumb_200x280.jpg"
 
       `(
-        <div key={index} className='thumbnail center-block'>
-          <a onClick={this._showModal(project.id)}>
+        <div key={index} className='proj-thumbnail'>
+          <a>
             <p>
               <img src={thumbSource} />
             </p>
           </a>
-
-          <div className="modal modal-fade project-detail" id={project.id}>
-            <a onClick={this._hideModal}>
-              {fullSizeImages}
-              {projectText}
-            </a>
-          </div>
-
         </div>
       )`
-
-  _hideModal: ->
-    $('.project-detail').removeClass('project-show')
-
-  _showModal: (id) ->
-    =>
-      $('.project-detail').removeClass('project-show')
-      $("#" + id).addClass('project-show')
 
   _renderText: (project) ->
     for para, index in project.text
