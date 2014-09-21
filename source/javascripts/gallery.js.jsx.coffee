@@ -22,12 +22,14 @@ Gallery = React.createClass
         `<p>Loading...</p>`
       else
         sectionLinks = @_sectionLinks()
+        caseStudyLinks = @_caseStudyLinks()
         selectedProject = @_selectedProject()
         thumbDisplay = @_thumbDisplay()
 
         `(
           <div id="content-top">
             {sectionLinks}
+            {caseStudyLinks}
 
             {selectedProject}
 
@@ -47,11 +49,20 @@ Gallery = React.createClass
       </ul>
     )`
 
+  _caseStudyLinks: ->
+    caseLinks = @_caseLinks()
+
+    `(
+      <ul className='case-studies'>
+        <li><strong>CASE STUDIES:</strong></li>
+        {caseLinks}
+      </ul>
+    )`
+
   _listLinks: ->
     links = [
-        "All", "Animation", "Art Direction", "Branding", "CSS", "Creative Direction", "Custom Illustration",
-        "Custom Lettering", "Design", "Drawing", "HTML", "Illustration", "Javascript", "Production", "Programming",
-        "Screen Printing", "Strategy", "Website Design", "Website Production"
+        "All", "Branding", "Creative Direction", "Custom Illustration",
+        "Custom Lettering", "Design", "Strategy", "Website Design", "Website Production"
       ]
 
     for link, index in links
@@ -71,6 +82,27 @@ Gallery = React.createClass
 
   _projectHasCategory: (project) ->
     $.inArray(@state.filter, project.categories) != -1
+
+  _caseLinks: ->
+    links = [
+        ["Hubbard One", "017"], ["Believe High School Networks", "006"], ["Trayt", "019"], ["WSFS", "015"]
+      ]
+
+    for link, index in links
+      selected = "active-" + ( @state.selectedProject != null && @state.selectedProject == link[1] )
+      `<li key={index}><a onClick={this._setCase(link[1])} className={selected}>{link[0]}</a></li>`
+
+  _setCase: (id) ->
+     =>
+      @setState
+        selectedProject: id
+        mainImage: @_selectedCaseStudy(id).images[0]
+
+      scroll()
+
+  _selectedCaseStudy: (id) ->
+    for project in @state.data.projects when project.id == id
+      return project
 
   _thumbDisplay: ->
     projects = switch @state.filter
@@ -119,9 +151,11 @@ Gallery = React.createClass
 
           `(
             <div key={index} className='jumbotron'>
-              {mainImage}
-              <br />
-              {selectedThumbs}
+              <div className="selected-images">
+                {mainImage}
+                <br />
+                {selectedThumbs}
+              </div>
               {text}
               <p>
                 <a onClick={this._closeSelected}>Close</a>
