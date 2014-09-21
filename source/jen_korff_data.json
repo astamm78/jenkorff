@@ -37,7 +37,7 @@
       "id" : "019",
       "text" : ["Creative Direction and Branding of the Trayt Logo and Trayt website."],
       "categories" : ["Branding", "Creative Direction", "Website Design"],
-      "images" : ["trayt_web.jpg"]
+      "images" : ["trayt_web.jpg", "Trayt_web03.jpg", "Trayt_web06.jpg"]
     },
     {
       "id" : "014",
@@ -61,7 +61,7 @@
       "id" : "020",
       "text" : ["Spearheaded the Re-Branding effort for Believe High Schools Network, Brooklyn, NY.", "Creative direction, Concept, Design, and Production for BHSN Web Newsletter.", "CLIENT TESTIMONIAL: <i>I was particularly impressed by my first working experience with Jen. Our department created content for a quarterly brochure and Jen was quickly able to execute a design and layout vision that appealed to donors, families and faculty/staff. She has a talent for guiding clients through her creative process and transforming the unique background of every project into thoughtful and timeless designs. -- Daisy Lopez, Director of Communications and External Affairs, Believe High Schools Network</i>"],
       "categories" : ["Branding", "Creative Direction", "Design", "Production", "Custom Lettering"],
-      "images" : ["BHSN_bulletin-01.jpg", "BHSN_bulletin-02.jpg"]
+      "images" : ["BHSN_bulletin-01.jpg", "BHSN_bulletin-02.jpg", "believe_respo5_.jpg"]
     },
     {
       "id" : "024",
@@ -73,13 +73,13 @@
       "id" : "015",
       "text" : ["Concept for website bought by client; Art Director and Lead Designer for the wsfsbank.com website and Lead Designer of re-branding of printed collateral highlighting bank services at new branches."],
       "categories" : ["Branding", "Art Direction", "Design", "Website Design", "Website Production"],
-      "images" : ["wsfs_web01.jpg", "wsfs_web02.jpg", "wsfs_z03.jpg"]
+      "images" : ["wsfs_web01.jpg", "wsfs_web02.jpg", "wsfs_z03.jpg", "Wsfs_respo8.jpg"]
     },
     {
       "id" : "013",
       "text" : ["Designer for the Jen Korff Photography website. Manage site HTML, CSS and Javascript."],
       "categories" : ["Branding", "Creative Direction", "Design", "Custom Illustration", "Custom Lettering"],
-      "images" : ["korff_web01.jpg", "korff_web02.jpg"]
+      "images" : ["korff_web01.jpg", "korff_web02.jpg", "jenkorff_respo.jpg"]
     },
     {
       "id" : "018",
@@ -169,7 +169,7 @@
       "id" : "016",
       "text" : ["Branding Strategy, Creative Direction, Custom-Illustration, and Website Design of the LGBT childrens book, Dahlia and Hazel.", "CLIENT TESTIMONIAL: <i>I couldn't have asked for anyone more perfect than Jen to work with. All work was done virtually so communication was key - she took our [story] through multiple concepts to a beautiful and unique finished product which included the design for our logo and website. She met every deadline and was easy to work with. Our developers appreciated her work too, as Jen was able to follow best practices and provided flexible design templates for their use. --Gary Mack, Managing Director and Co-Founder, Apologue Entertainment, LLC</i>"],
       "categories" : ["Branding", "Creative Direction", "Custom Illustration", "Design", "Production"],
-      "images" : ["dh_web01.jpg", "dh_web02.jpg", "dh_web03.jpg", "dh_web04.jpg"]
+      "images" : ["dh_web01.jpg", "dh_web02.jpg", "dh_web03.jpg", "dh_web04.jpg", "dahlia_respo_1240.jpg"]
     },
     {
       "id" : "002",
