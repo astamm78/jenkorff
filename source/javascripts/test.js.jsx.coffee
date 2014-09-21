@@ -6,7 +6,7 @@ Test = React.createClass
 
   getInitialState: ->
     data: null
-    filter: 'ALL'
+    filter: 'All'
     selectedProject: null
 
   _getJSON: ->
@@ -21,11 +21,14 @@ Test = React.createClass
       when null
         `<p>Loading...</p>`
       else
-        thumbDisplay = @_thumbDisplay()
+        sectionLinks = @_sectionLinks()
         selectedProject = @_selectedProject()
+        thumbDisplay = @_thumbDisplay()
 
         `(
           <div id="content-top">
+            {sectionLinks}
+
             {selectedProject}
 
             <div className='thumb-container'>
@@ -35,8 +38,35 @@ Test = React.createClass
         )`
 
 
+  _sectionLinks: ->
+    links = [
+        "All", "Animation", "Art Direction", "Branding", "CSS", "Creative Direction", "Custom Illustration",
+        "Custom Lettering", "Design", "Drawing", "HTML", "Illustration", "Javascript", "Production", "Programming",
+        "Screen Printing", "Strategy", "Website Design", "Website Production"
+      ]
+
+    for link, index in links
+      `<a key={index} onClick={this._filterProjects(link)}>{link}</a>`
+
+  _filterProjects: (filter) ->
+    =>
+      @setState
+        filter: filter
+        selectedProject: null
+        mainImage: null
+
+  _filteredProjects: (filter) ->
+    for project in @state.data.projects when @_projectHasCategory(project)
+      project
+
+  _projectHasCategory: (project) ->
+    $.inArray(@state.filter, project.categories) != -1
+
   _thumbDisplay: ->
-    projects = @state.data.projects
+    projects = switch @state.filter
+      when 'All' then @state.data.projects
+      else
+        @_filteredProjects(@state.filter)
 
     for project, index in projects
       thumbSource = "images/" + project.id + "/thumb_200x280.jpg"
