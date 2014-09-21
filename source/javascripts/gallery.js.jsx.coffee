@@ -89,7 +89,7 @@ Gallery = React.createClass
       ]
 
     for link, index in links
-      selected = "active-" + ( @state.selectedProject != null && @state.selectedProject == link[1] )
+      selected = "case-" + ( @state.selectedProject != null && @state.selectedProject == link[1] )
       `<li key={index}><a onClick={this._setCase(link[1])} className={selected}>{link[0]}</a></li>`
 
   _setCase: (id) ->
