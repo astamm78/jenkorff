@@ -7,13 +7,13 @@ Test = React.createClass
   getInitialState: ->
     data: null
     filter: 'ALL'
+    selectedProject: null
 
   _getJSON: ->
-    $.ajax 'test.json',
+    $.ajax 'jen_korff_data.json',
       type: 'get'
       dataType: 'json'
       success: (data) =>
-        console.log data
         @setState data: data
 
   render: ->
@@ -22,10 +22,15 @@ Test = React.createClass
         `<p>Loading...</p>`
       else
         thumbDisplay = @_thumbDisplay()
+        selectedProject = @_selectedProject()
 
         `(
-          <div className='thumb-container'>
-            {thumbDisplay}
+          <div>
+            {selectedProject}
+
+            <div className='thumb-container'>
+              {thumbDisplay}
+            </div>
           </div>
         )`
 
@@ -38,13 +43,51 @@ Test = React.createClass
 
       `(
         <div key={index} className='proj-thumbnail'>
-          <a>
+          <a onClick={this._setProjectDetail(project)}>
             <p>
               <img src={thumbSource} />
             </p>
           </a>
         </div>
       )`
+
+  _closeSelected: ->
+    @setState
+      selectedProject: null
+      mainImage: null
+
+  _setProjectDetail: (project) ->
+    =>
+      @setState
+        selectedProject: project.id
+        mainImage: project.images[0]
+
+  _selectedProject: ->
+    projects = @state.data.projects
+
+    switch @state.selectedProject
+      when null then ``
+      else
+        for project, index in projects when project.id == @state.selectedProject
+          mainImage = @_mainImage(project)
+          selectedThumbs = @_selectedThumbs(project)
+          text = @_renderText(project)
+
+          `(
+            <div key={index} className='jumbotron'>
+              {mainImage}
+              <br />
+              {selectedThumbs}
+              {text}
+              <p>
+                <a onClick={this._closeSelected}>Close</a>
+              </p>
+            </div>
+          )`
+
+  _mainImage: (project) ->
+    url = "images/" + project.id + "/" + @state.mainImage
+    `<img src={url} />`
 
   _renderText: (project) ->
     for para, index in project.text
@@ -54,13 +97,23 @@ Test = React.createClass
         </p>
       )`
 
-  _fullSizeImages: (project) ->
-    for image, index in project.images
-      url = "images/" + project.id + "/" + image
+  _selectedThumbs: (project) ->
+    if project.images.length > 1
+      for image, index in project.images
+        url = "images/" + project.id + "/" + image
 
-      `(
-        <img key={index} src={url} />
-      )`
+        `(
+          <a key={index} onClick={this._setMainImage(image)}>
+            <img  src={url} height="50" />
+          </a>
+        )`
+
+    else
+      ``
+
+  _setMainImage: (image) ->
+    =>
+      @setState mainImage: image
 
 
 React.renderComponent Test(), document.getElementById('react-content')
