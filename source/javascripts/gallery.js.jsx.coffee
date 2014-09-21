@@ -1,6 +1,6 @@
 ###* @jsx React.DOM ###
 
-Test = React.createClass
+Gallery = React.createClass
   componentWillMount: ->
     @_getJSON()
 
@@ -39,6 +39,15 @@ Test = React.createClass
 
 
   _sectionLinks: ->
+    listItems = @_listLinks()
+
+    `(
+      <ul className='filters'>
+        {listItems}
+      </ul>
+    )`
+
+  _listLinks: ->
     links = [
         "All", "Animation", "Art Direction", "Branding", "CSS", "Creative Direction", "Custom Illustration",
         "Custom Lettering", "Design", "Drawing", "HTML", "Illustration", "Javascript", "Production", "Programming",
@@ -46,7 +55,8 @@ Test = React.createClass
       ]
 
     for link, index in links
-      `<a key={index} onClick={this._filterProjects(link)}>{link}</a>`
+      selected = "active-" + ( @state.filter == link )
+      `<li key={index}><a onClick={this._filterProjects(link)} className={selected}>{link}</a></li>`
 
   _filterProjects: (filter) ->
     =>
@@ -121,7 +131,7 @@ Test = React.createClass
 
   _mainImage: (project) ->
     url = "images/" + project.id + "/" + @state.mainImage
-    `<img src={url} />`
+    `<img src={url} className='main-project-image'/>`
 
   _renderText: (project) ->
     for para, index in project.text
@@ -155,7 +165,7 @@ Test = React.createClass
         url = "images/" + project.id + "/" + image
 
         `(
-          <a key={index} onClick={this._setMainImage(image)}>
+          <a key={index} onClick={this._setMainImage(image)} className="selected-thumbs" >
             <img  src={url} height="50" />
           </a>
         )`
@@ -168,5 +178,5 @@ Test = React.createClass
       @setState mainImage: image
 
 
-React.renderComponent Test(), document.getElementById('react-content')
+React.renderComponent Gallery(), document.getElementById('react-content')
 
