@@ -25,7 +25,7 @@ Test = React.createClass
         selectedProject = @_selectedProject()
 
         `(
-          <div>
+          <div id="content-top">
             {selectedProject}
 
             <div className='thumb-container'>
@@ -56,11 +56,15 @@ Test = React.createClass
       selectedProject: null
       mainImage: null
 
+    scroll()
+
   _setProjectDetail: (project) ->
     =>
       @setState
         selectedProject: project.id
         mainImage: project.images[0]
+
+      scroll()
 
   _selectedProject: ->
     projects = @state.data.projects
@@ -91,11 +95,29 @@ Test = React.createClass
 
   _renderText: (project) ->
     for para, index in project.text
+      html = $.parseHTML( para )
+      parsedHTML = @_parsedHTML(html)
+
       `(
         <p key={index}>
-          {para}
+          {parsedHTML}
         </p>
       )`
+
+  _parsedHTML: (html) ->
+    for tag, index in html
+      if tag.nodeName == "I"
+        `(
+          <span key={index}>
+            <em>{$(tag).html()}</em>
+          </span>
+        )`
+      else
+        `(
+          <span key={index}>
+            {$(tag).text()}
+          </span>
+        )`
 
   _selectedThumbs: (project) ->
     if project.images.length > 1
