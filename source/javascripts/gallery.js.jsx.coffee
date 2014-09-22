@@ -7,7 +7,16 @@ Gallery = React.createClass
   getInitialState: ->
     data: null
     filter: 'All'
-    selectedProject: null
+    selectedProject: @_selectedProjectIdFromHash()
+
+  _selectedProjectIdFromHash: ->
+    hash = window.location.hash
+    switch hash
+      when ""
+        return null
+      else
+        id = window.location.hash.replace(/#/, '');
+        id
 
   _getJSON: ->
     $.ajax 'jen_korff_data.json',
@@ -96,11 +105,12 @@ Gallery = React.createClass
      =>
       @setState
         selectedProject: id
-        mainImage: @_selectedCaseStudy(id).images[0]
+        mainImage: @_selectedProjectFromId(id).images[0]
 
       scroll()
+      window.location.hash = id
 
-  _selectedCaseStudy: (id) ->
+  _selectedProjectFromId: (id) ->
     for project in @state.data.projects when project.id == id
       return project
 
@@ -129,6 +139,7 @@ Gallery = React.createClass
       mainImage: null
 
     scroll()
+    window.location.hash = ''
 
   _setProjectDetail: (project) ->
     =>
@@ -137,6 +148,7 @@ Gallery = React.createClass
         mainImage: project.images[0]
 
       scroll()
+      window.location.hash = project.id
 
   _selectedProject: ->
     projects = @state.data.projects
@@ -164,7 +176,7 @@ Gallery = React.createClass
           )`
 
   _mainImage: (project) ->
-    url = "images/" + project.id + "/" + @state.mainImage
+    url = "images/" + project.id + "/" + (@state.mainImage || project.images[0])
     `<img src={url} className='main-project-image'/>`
 
   _renderText: (project) ->
