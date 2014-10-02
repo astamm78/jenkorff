@@ -80,6 +80,7 @@ Gallery = React.createClass
 
   _filterProjects: (filter) ->
     =>
+      window.location.hash = ''
       @setState
         filter: filter
         selectedProject: null
